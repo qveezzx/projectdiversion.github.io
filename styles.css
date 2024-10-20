@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1d1d;
+    color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    font-family: 'Impact', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.login .login-button, .purchase-button {
+    background-color: #333; /* Ciemny kolor */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login .purchase-button:hover, .login .login-button:hover {
+    background-color: #444; /* Jaśniejszy przy najechaniu */
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.quotes, .reviews {
+    max-width: 300px;
+}
+
+.quotes blockquote, .reviews blockquote {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.game-characters img {
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.purchase-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.purchase-buttons .button {
+    margin: 20px;
+}
+
+.purchase-buttons .button a {
+    padding: 15px 30px;
+    background-color: #2a2a2a; /* Ciemny kolor przycisku */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-buttons .button a:hover {
+    background-color: #444; /* Zmiana koloru na jaśniejszy po najechaniu */
+}
+
+footer {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Usuwamy pogrubienie wszędzie */
+h1, a, p, blockquote, button {
+    font-weight: normal;
+}
